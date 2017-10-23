@@ -17,7 +17,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <ul class="tabs">
 		<xsl:for-each select="XMLDocs/class">
 			<li class="tab">
-				<a href='#\<xsl:value-of select="name"\/\>'>
+				<a>
+				<xsl:attribute name="href">
+					#<xsl:value-of select="name"/>
+					</xsl:attribute>
 				<xsl:value-of select="name"/>
 					 </a>
 			</li>
