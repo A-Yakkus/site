@@ -16,7 +16,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <div class="col s12">
       <ul class="tabs">
 		<xsl:for-each select="XMLDocs/class">
-			<li><a href='#<xsl:value-of select="name"/>'><xsl:value-of select="name"/></a></li>
+			<li><!--<a href='#<xsl:value-of select="name"/>'>--><xsl:value-of select="name"/><!--</a>--></li>
 		</xsl:for-each>
       </ul>
 </div>
