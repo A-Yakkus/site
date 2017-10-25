@@ -42,7 +42,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 										XMLDocs/class/<xsl:value-of select="local-name()"/> = ''
 									</xsl:attribute>
 			      					<div class="collapsible-header disabled"><xsl:value-of select="local-name()"></div>
-      								<div class="collapsible-body disabled"/>
+      								<div class="collapsible-body disabled"></div>
 								</xsl:when>
 								<xsl:otherwise>
 									<div class="collapsible-header"><xsl:value-of select="local-name()"></div>
