@@ -14,7 +14,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <main>
 	<div class="row">
 		<div class="col s12">
-      		<ul class="tabs cyan">
+      			<ul class="tabs cyan">
 				<xsl:for-each select="XMLDocs/class">
 					<li class="tab white-text">
 						<a>
@@ -28,38 +28,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  			</ul>
 		</div>
 	</div>
-	<xsl:for-each select="XMLDocs/class/metadata">
-		<div>
-			<xsl:attribute name="id">
-				<xsl:value-of select="name"/>
-			</xsl:attribute>
-			<ul class="collapsible" data-collapsible="accordion">
-				<xsl:foreach select="XMLDocs/class">
-					<li>
-							<xsl:choose>	
-								<xsl:when>
-									<xsl:attribute name="test">
-										XMLDocs/class/<xsl:value-of select="local-name()"/> = ''
-									</xsl:attribute>
-			      					<div class="collapsible-header disabled"><xsl:value-of select="local-name()"/></div>
-      								<div class="collapsible-body disabled"></div>
-								</xsl:when>
-								<xsl:otherwise>
-									<div class="collapsible-header"><xsl:value-of select="local-name()"/></div>
-      						<div class="collapsible-body">
-										<xsl:for-each>
-											<xsl:attribute name="select">
-												XMLDocs/class/<xsl:value-of select="local-name()"/>
-											</xsl:attribute>
-										</xsl:for-each>
-									</div>
-								</xsl:otherwise>
-							</xsl:choose>
-					</li>
-				</xsl:foreach>
-			</ul>	
-		</div>
-	</xsl:for-each>
+	
 </main>
 </body>
 </html>
