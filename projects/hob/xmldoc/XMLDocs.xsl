@@ -46,16 +46,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 								</xsl:when>
 								<xsl:otherwise>
 									<div class="collapsible-header"><xsl:value-of select="local-name()"></div>
-      								<div class="collapsible-body">
+      						<div class="collapsible-body">
 										<xsl:for-each>
 											<xsl:attribute name="select">
 												XMLDocs/class/<xsl:value-of select="local-name()"/>
 											</xsl:attribute>
 										</xsl:for-each>
+									</div>
 								</xsl:otherwise>
 							</xsl:choose>
-						</div>
-    				</li>
+					</li>
 				</xsl:foreach>
 			</ul>	
 		</div>
