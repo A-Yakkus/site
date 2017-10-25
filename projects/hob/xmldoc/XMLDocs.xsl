@@ -41,11 +41,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 									<xsl:attribute name="test">
 										XMLDocs/class/<xsl:value-of select="local-name()"/> = ''
 									</xsl:attribute>
-			      					<div class="collapsible-header disabled"><xsl:value-of select="local-name()"></div>
+			      					<div class="collapsible-header disabled"><xsl:value-of select="local-name()"/></div>
       								<div class="collapsible-body disabled"></div>
 								</xsl:when>
 								<xsl:otherwise>
-									<div class="collapsible-header"><xsl:value-of select="local-name()"></div>
+									<div class="collapsible-header"><xsl:value-of select="local-name()"/></div>
       						<div class="collapsible-body">
 										<xsl:for-each>
 											<xsl:attribute name="select">
