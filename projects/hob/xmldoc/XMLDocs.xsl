@@ -28,7 +28,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  			</ul>
 		</div>
 	</div>
-	<xsl:for-each select="XMLDocs/class/metadata">
+	<xsl:for-each select="XMLDocs/class">
 		<div>
 			<xsl:attribute name="id">
 				<xsl:value-of select="name"/>
