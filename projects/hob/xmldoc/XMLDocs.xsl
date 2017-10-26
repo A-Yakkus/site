@@ -34,22 +34,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:value-of select="name"/>
 			</xsl:attribute>
 			<ul class="collapsible" data-collapsible="accordion">
-				<xsl:for-each select="XMLDocs/class/">
+				<xsl:for-each select="/">
 		<li>
 			<xsl:choose>	
-				<xsl:when test="local-name()">
-					<div class="collapsible-header disabled"><xsl:value-of select="local-name()"/></div>
+				<xsl:when test="not(/*[text()])">
+					<div class="collapsible-header disabled"><xsl:value-of select="name()"/></div>
       				        <div class="collapsible-body disabled"></div>
 	  			</xsl:when>
 				<xsl:otherwise>
-				<div class="collapsible-header"><xsl:value-of select="local-name()"/></div>
+				<div class="collapsible-header"><xsl:value-of select="name()"/></div>
       				<div class="collapsible-body">
-					hi
+					name()
 				</div>
 				</xsl:otherwise>
 			</xsl:choose>
+
 			</li>
 		</xsl:for-each>
+
 			</ul>	
 		</div>
 	</xsl:for-each>
