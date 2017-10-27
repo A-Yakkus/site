@@ -33,8 +33,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:attribute name="id">
 				<xsl:value-of select="name"/>
 			</xsl:attribute>
-				<xsl:for-each="../">
-					<xsl:value-of select="/">	
+				<xsl:for-each select="../">
+					<xsl:value-of select="/"/>	
 				</xsl:for-each>
 		</div>
 	</xsl:for-each>
