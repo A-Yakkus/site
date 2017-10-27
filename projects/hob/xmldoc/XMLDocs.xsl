@@ -16,8 +16,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<div class="col s12">
       			<ul class="tabs cyan">
 				<xsl:for-each select="XMLDocs/class">
-					<li class="tab white-text">
-						<a>
+					<li class="tab">
+						<a class="white-text">
 							<xsl:attribute name="href">
 								#<xsl:value-of select="name"/>
 							</xsl:attribute>
@@ -33,7 +33,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:attribute name="id">
 				<xsl:value-of select="name"/>
 			</xsl:attribute>
-				
+				<xsl:for-each="../">
+					<xsl:value-of select="/">	
+				</xsl:for-each>
 		</div>
 	</xsl:for-each>
 </main>
