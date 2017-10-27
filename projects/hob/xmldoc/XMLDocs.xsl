@@ -36,12 +36,27 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							<ul class="collapsible" data-collapsible="accordion">
 								<xsl:for-each select="*">
 									<li>
-										<div class="collapsible-header">
-											<xsl:value-of select="name()"/>
-										</div>
-										<div class="collapsible-body">
-											<span>Lorem ipsum dolor sit amet.</span>
-										</div>
+										<xsl:if test="name != ''"></xsl:if>
+										<xsl:choose>
+											<xsl:when test="not(node())">
+												<div class="collapsible-header disabled">
+													<xsl:value-of select="name()"/>
+												</div>
+												<div class="collapsible-body disabled">
+												</div>
+											</xsl:when>
+											<xsl:otherwise>
+												<div class="collapsible-header">
+													<xsl:value-of select="name()"/>
+												</div>
+												<div class="collapsible-body">
+													<xsl:for-each select="*">
+														<xsl:value-of select="name()"/>
+													</xsl:for-each>
+												</div>
+											</xsl:otherwise>
+										</xsl:choose>
+										
 									</li>
 								</xsl:for-each>
 							</ul>
