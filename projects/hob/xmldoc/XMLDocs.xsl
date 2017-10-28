@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 		<html>
 			<head>
@@ -36,26 +34,23 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							<ul class="collapsible" data-collapsible="accordion">
 								<xsl:for-each select="*">
 									<li>
-										
 										<xsl:choose>
 											<xsl:when test="name() = 'name'"></xsl:when>
-											<xsl:when test="not(node())">
-												<div class="collapsible-header red">
-													<xsl:value-of select="name()"/>
-												</div>
-											</xsl:when>
+											<xsl:when test="not(node())"></xsl:when>
 											<xsl:otherwise>
-												<div class="collapsible-header">
+												<div class="collapsible-header brown darken-1">
 													<xsl:value-of select="name()"/>
 												</div>
 												<div class="collapsible-body">
 													<xsl:for-each select="*">
-														<xsl:value-of select="name()"/>
+														<p class="cyan-text darken-4 brown lighten-2">
+															<strong><xsl:value-of select="name()"/></strong>:
+															<xsl:value-of select="text()">
+														</p>
 													</xsl:for-each>
 												</div>
 											</xsl:otherwise>
 										</xsl:choose>
-										
 									</li>
 								</xsl:for-each>
 							</ul>
