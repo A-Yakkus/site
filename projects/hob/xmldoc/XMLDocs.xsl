@@ -38,8 +38,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 									<li>
 										
 										<xsl:choose>
-											<xsl:when test="name != ''"></xsl:when>
-											<xsl:when test=not(node())>
+											<xsl:when test="node()text()==true"></xsl:when>
+											<xsl:when test="node()">
 												<div class="collapsible-header disabled">
 													<xsl:value-of select="name()"/>
 												</div>
