@@ -45,7 +45,7 @@
 													<xsl:for-each select="*">
 														<p class="cyan-text darken-4 brown lighten-2">
 															<strong><xsl:value-of select="name()"/></strong>:
-															<xsl:value-of select="text()">
+															<xsl:value-of select="text()"/>
 														</p>
 													</xsl:for-each>
 												</div>
