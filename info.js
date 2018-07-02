@@ -26,6 +26,11 @@ var data = [
     type:["Social"],
     link:["https://twitter.com/a_yakkus"]
   },
+  {//Discord
+    name:"Discord",
+    type:["Social","Gaming"],
+    link:["A_Yakkus#6078"]
+  },
   {//Github
     name:"Github",
     type:["Business"],
@@ -34,7 +39,7 @@ var data = [
   {//MAL
     name:"MyAnimeList",
     type:["Hobby"],
-    link:["https://myanimelist.net/profile/A_Yakkus"],
+    link:["https://myanimelist.net/profile/A_Yakkus"]
     //info:"Service is temporarily disabled by the company."
   }
 ]
