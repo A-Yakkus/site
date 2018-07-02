@@ -35,7 +35,7 @@ var data = [
     name:"MyAnimeList",
     type:["Hobby"],
     link:["https://myanimelist.net/profile/A_Yakkus"],
-    info:"Service is temporarily disabled by the company."
+    //info:"Service is temporarily disabled by the company."
   }
 ]
 
