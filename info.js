@@ -46,7 +46,7 @@ var data = [
 
 var root = document.getElementById("contactRoot");
 
-function load2(){
+function load(){
   var tabsObj = document.getElementById("types");
   var contentObj = document.getElementById("holder");
   var tabTitles = [];
@@ -76,7 +76,7 @@ function load2(){
 
 function buildDiv(object){
   var ret = "";
-  ret+="<div id="+object.name+" class='col s12 l6'><h5>"+object.name+"</h5>";
+  ret+="<div id="+object.name+" class='col s12 l6' style='min-height:150px'><h5>"+object.name+"</h5>";
   if(!(object.info=="undefined"||object.info==null)) ret+="<p>"+object.info+"</p>";
   ret+="<p>Available at:<br/>";
   for(var i in object.link){
@@ -88,4 +88,4 @@ function buildDiv(object){
   return ret;
 }
 
-load2();
+load();
