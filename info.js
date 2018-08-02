@@ -46,7 +46,6 @@ var data = [
 
 var root = document.getElementById("contactRoot");
 
-
 function load(){
   var types = [];
   //var display = new Map([String, String]);
@@ -81,9 +80,38 @@ function load(){
   root.innerHTML+=html;
 }
 
+function load2(){
+  var tabsObj = document.getElementById("types");
+
+  var contentObj = document.getElementById("holder");
+  var tabTitles = [];
+  data.forEach(function(element){
+    element.type.forEach(function(e){
+      if(!tabTitles.includes(e))
+        tabTitles.push(e);
+      }
+    );
+  });
+  var html = "";
+  var html2 = "";
+  tabTitles.forEach(function(e){
+    html+="<li class='tab col s1'><a href=#"+e+">"+e+"</a></li>";
+    html2+="<div id="+e+" class='col s12'><div class='row'></div></div>";
+  });
+  tabsObj.insertAdjacentHTML("afterbegin", html);
+  contentObj.insertAdjacentHTML("afterbegin", html2);
+  var instance = M.Tabs.init(tabsObj, {swipeable:true});
+  html="";
+  data.forEach(function(e){
+    e.type.forEach(function(e2){
+      document.getElementById(e2).firstElementChild.insertAdjacentHTML("beforeend", buildDiv(e));
+    });
+  });
+}
+
 function buildDiv(object){
   var ret = "";
-  ret+="<div id="+object.name+" class='col s12'><h5>By "+object.name;
+  ret+="<div id="+object.name+" class='col s12 l6'><h5>"+object.name;
   ret+="</h5>";
   if(!(object.info=="undefined"||object.info==null)) ret+="<p>"+object.info+"</p>";
   ret+="<p>Available at:<br/>";
@@ -96,4 +124,4 @@ function buildDiv(object){
   return ret;
 }
 
-load();
+load2();
