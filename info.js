@@ -46,40 +46,6 @@ var data = [
 
 var root = document.getElementById("contactRoot");
 
-function load(){
-  var types = [];
-  //var display = new Map([String, String]);
-  var disp = [];
-
-  for(var i in data){
-    var object=data[i];
-    /*for(var j in object.type){
-      if(!types.includes(object.type[j])){
-        types.push(object.type[j]);
-        display.set(object.type[j], buildDiv(object));
-
-      }
-    }//*/
-    disp.push(buildDiv(object));
-  }
-  var html = "";
-  var liClass="\'tab col s"+Math.floor(types.length/12)+"\'"
-  html+="<div class='row'>"
-  /*html+="<div class='col s12'><ul id='tabList' class='tabs'>";
-  for(var i in types){
-    html+="<li class="+liClass+"><a href=#"+types[i]+">"+types[i]+"</a></li>";
-  }
-  //html+="</ul></div>";*/
-  /*for(let [key, value] of display){
-    html+=value;
-  }*/
-  for(var i in disp){
-    html+=disp[i];
-  }
-  html+="</div>"
-  root.innerHTML+=html;
-}
-
 function load2(){
   var tabsObj = document.getElementById("types");
   var contentObj = document.getElementById("holder");
@@ -110,8 +76,7 @@ function load2(){
 
 function buildDiv(object){
   var ret = "";
-  ret+="<div id="+object.name+" class='col s12 l6'><h5>"+object.name;
-  ret+="</h5>";
+  ret+="<div id="+object.name+" class='col s12 l6'><h5>"+object.name+"</h5>";
   if(!(object.info=="undefined"||object.info==null)) ret+="<p>"+object.info+"</p>";
   ret+="<p>Available at:<br/>";
   for(var i in object.link){
