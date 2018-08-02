@@ -82,7 +82,6 @@ function load(){
 
 function load2(){
   var tabsObj = document.getElementById("types");
-
   var contentObj = document.getElementById("holder");
   var tabTitles = [];
   data.forEach(function(element){
@@ -95,8 +94,8 @@ function load2(){
   var html = "";
   var html2 = "";
   tabTitles.forEach(function(e){
-    html+="<li class='tab col s1'><a href=#"+e+">"+e+"</a></li>";
-    html2+="<div id="+e+" class='col s12'><div class='row'></div></div>";
+    html+="<li class='tab col s1'><a href=#"+e+" class='black-text darken-4'>"+e+"</a></li>";
+    html2+="<div id="+e+" class='col s12 overflow'><div class='row'></div></div>";
   });
   tabsObj.insertAdjacentHTML("afterbegin", html);
   contentObj.insertAdjacentHTML("afterbegin", html2);

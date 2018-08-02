@@ -17,6 +17,16 @@
 	      position:absolute;
 	      font-size:xx-large;
 	    }
+      .overflow{
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .tabs .tab a.active{
+        background-color: #b0bec5!important;
+      }
+      .tabs .indicator{
+        background-color: #263238!important;
+      }
     </style>
   </head>
   <body class="grey">
@@ -44,15 +54,14 @@
       </div>
     </section>
     <section>
-			<div id="contactRoot" class="container grey lighten-3 round">
+			<div id="contactRoot" class="container grey lighten-2 round">
         <div class="row">
           <h3 class="col s12">Contact Me:</h3>
         </div>
-        <ul id="types" class="tabs">
-
+        <ul id="types" class="tabs grey lighten-3">
         </ul>
         <div id="holder">
-          
+
         </div>
       </div>
     </section>
