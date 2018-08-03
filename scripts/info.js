@@ -44,22 +44,18 @@ var data = [
   }
 ]
 
-var root = document.getElementById("contactRoot");
-
 function load(){
   var tabsObj = document.getElementById("types");
   var contentObj = document.getElementById("holder");
   var tabTitles = [];
-  data.forEach(function(element){
-    element.type.forEach(function(e){
+  data.forEach(el=>{
+    el.type.forEach(e =>{
       if(!tabTitles.includes(e))
-        tabTitles.push(e);
-      }
-    );
+        tabTitles.push(e)
+    })
   });
-  var html = "";
-  var html2 = "";
-  tabTitles.forEach(function(e){
+  var html = html2 = "";
+  tabTitles.forEach(e=>{
     html+="<li class='tab col s1'><a href=#"+e+" class='black-text darken-4'>"+e+"</a></li>";
     html2+="<div id="+e+" class='col s12 overflow'><div class='row'></div></div>";
   });
@@ -67,20 +63,20 @@ function load(){
   contentObj.insertAdjacentHTML("afterbegin", html2);
   var instance = M.Tabs.init(tabsObj, {swipeable:true});
   html="";
-  data.forEach(function(e){
-    e.type.forEach(function(e2){
-      document.getElementById(e2).firstElementChild.insertAdjacentHTML("beforeend", buildDiv(e));
-    });
+  data.forEach(e=>{
+    e.type.forEach(e2=>{
+      document.getElementById(e2).firstElementChild.insertAdjacentHTML("beforeend", buildDiv(e))
+    })
   });
 }
 
 function buildDiv(object){
   var ret = "";
-  ret+="<div id="+object.name+" class='col s12 l6' style='min-height:150px'><h5>"+object.name+"</h5>";
+  ret+="<div class='col s12 l6 "+ object.name +"' style='min-height:150px'><h5>"+object.name+"</h5>";
   if(!(object.info=="undefined"||object.info==null)) ret+="<p>"+object.info+"</p>";
   ret+="<p>Available at:<br/>";
   for(var i in object.link){
-    if(object.link[i].includes("https")) ret+="<a href="+object.link[i]+" target='_new'>"+object.link[i]+"</a><br/>";
+    if(object.link[i].includes("https")) ret+="<a href="+object.link[i]+" target='_blank'>"+object.link[i]+"</a><br/>";
     else ret+=object.link[i]+"<br/>";
   }
   ret+="</p>";
