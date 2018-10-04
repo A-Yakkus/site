@@ -42,6 +42,10 @@ var data = [
     link:["https://myanimelist.net/profile/A_Yakkus"]
     //info:"Service is temporarily disabled by the company."
   }
+  {//linked In
+    name:"LinkedIn",
+    type:["Business"],
+    link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
 ]
 
 function load(){
