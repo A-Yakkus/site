@@ -1,7 +1,7 @@
 var data = [
   {//email
     name:"Email",
-    type:["Business","Casual"],
+    type:["Business"],
     link:["jack.stevenson9001@gmail.com"],
     icon:"email"
   },
@@ -13,7 +13,7 @@ var data = [
   },
   {//skype
     name:"Skype",
-    type:["Casual","Social"],
+    type:["Social"],
     link:["theyakattheendoftheuniverse", "jack.stevenson9001@gmail.com"]
   },
   {//Facebook
