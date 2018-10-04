@@ -8,3 +8,12 @@ div{
   position:absolute;
   font-size:xx-large;
 }
+
+#menuButton{
+  position:fixed;
+  top:16px;
+  left:16px;
+  /*min-width: 32px;
+  min-height: 32px;*/
+  z-index: 10;
+}
