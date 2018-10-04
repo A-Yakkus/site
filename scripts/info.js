@@ -46,6 +46,7 @@ var data = [
     name:"LinkedIn",
     type:["Business"],
     link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
+  }
 ]
 
 function load(){
