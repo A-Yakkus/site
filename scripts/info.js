@@ -41,7 +41,7 @@ var data = [
     type:["Hobby"],
     link:["https://myanimelist.net/profile/A_Yakkus"]
     //info:"Service is temporarily disabled by the company."
-  }
+  },
   {//linked In
     name:"LinkedIn",
     type:["Business"],
