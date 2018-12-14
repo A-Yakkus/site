@@ -1,50 +1,50 @@
 var data = [
   {//email
     name:"Email",
-    type:["Business"],
+    type:["All","Business"],
     link:["jack.stevenson9001@gmail.com"],
     icon:"email"
   },
   {//phone
     name:"Phone",
-    type:["Business"],
+    type:["All","Business"],
     link:["07979 227 223"],
     icon:"phone"
   },
   {//skype
     name:"Skype",
-    type:["Social"],
+    type:["All","Social"],
     link:["theyakattheendoftheuniverse", "jack.stevenson9001@gmail.com"]
   },
   {//Facebook
     name:"Facebook",
-    type:["Social"],
+    type:["All","Social"],
     link:["https://www.facebook.com/jack.stevenson.1656"]
   },
   {//twitter
     name:"Twitter",
-    type:["Social"],
+    type:["All","Social"],
     link:["https://twitter.com/a_yakkus"]
   },
   {//Discord
     name:"Discord",
-    type:["Social","Gaming"],
+    type:["All","Social","Gaming"],
     link:["A_Yakkus#6078"]
   },
   {//Github
     name:"Github",
-    type:["Business"],
+    type:["All","Business"],
     link:["https://github.com/a_yakkus"]
   },
   {//MAL
     name:"MyAnimeList",
-    type:["Hobby"],
+    type:["All","Hobby"],
     link:["https://myanimelist.net/profile/A_Yakkus"]
     //info:"Service is temporarily disabled by the company."
   },
   {//linked In
     name:"LinkedIn",
-    type:["Business"],
+    type:["All","Business"],
     link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
   }
 ]
