@@ -36,16 +36,20 @@ var data = [
     type:["All","Business"],
     link:["https://github.com/a_yakkus"]
   },
-  {//MAL
-    name:"MyAnimeList",
-    type:["All","Hobby"],
-    link:["https://myanimelist.net/profile/A_Yakkus"]
-    //info:"Service is temporarily disabled by the company."
-  },
   {//linked In
     name:"LinkedIn",
     type:["All","Business"],
     link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
+  },
+  {
+    name:"Reddit",
+    type:["All", "Social"],
+    link:["https://www.reddit.com/user/ayakkus"]
+  },
+  {//MAL
+    name:"MyAnimeList",
+    type:["All","Hobby"],
+    link:["https://myanimelist.net/profile/A_Yakkus"]
   }
 ]
 
