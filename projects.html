@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>A_Yakkus-Projects</title>
+  <link rel="icon" href="assets/logo.png"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"  media="screen"/>
+  <link type="text/css" rel="stylesheet" href="styles/master.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style media="screen">
+      #selector{
+      }
+      #viewer{
+        display:inline-block
+      }
+      .hidden{
+        display:none;
+      }
+  </style>
+</head>
+<body class="grey">
+  <noscript class="center-align">
+    <div class="valign-wrapper center-align black front red-text">You NEED javascript enabled to use this site</div>
+  </noscript>
+  <ul id="slide-out" class="sidenav">
+    <li><a class="waves-effect" href="/site/info.html"><i class="material-icons">info_outline</i>About/Contact Information</a></li>
+  </ul>
+  <a id="menuButton" href="#" data-target="slide-out" class="sidenav-trigger grey-text grey lighten-2"><i class="material-icons" style="font-size:2.5rem;">menu</i></a>
+  <section id="aboutPage" class="container grey lighten-2 round">
+    This is some text.
+  </section>
+  <section id="projectList" class="container grey lighten-2 round">
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">Your Thought</div>
+        <div class="collapsible-body"><span>Your Thought is a Virtual Learning Environment with the aim of putting the users first.
+          <br/>I am a principal developer on the team.<br/> You can find out more <a href="https://edu.yourthought.co.uk">here</a><!--, or join the discord server <a href="discord.gg/GGddC2t">here</a>--></span></div>
+      </li>
+      <!--
+      <li>
+        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div> <div
+        class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>-->
+    </ul>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="scripts/master.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+    });
+  </script>
+</body>
+</html>
