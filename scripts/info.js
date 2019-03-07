@@ -1,17 +1,17 @@
 var data = [
-  {//email
+  {//Email
     name:"Email",
     type:["All","Business"],
     link:["jack.stevenson9001@gmail.com"],
     icon:"email"
   },
-  {//phone
+  {//Phone
     name:"Phone",
     type:["All","Business"],
     link:["07979 227 223"],
     icon:"phone"
   },
-  {//skype
+  {//Skype
     name:"Skype",
     type:["All","Social"],
     link:["theyakattheendoftheuniverse", "jack.stevenson9001@gmail.com"]
@@ -21,7 +21,7 @@ var data = [
     type:["All","Social"],
     link:["https://www.facebook.com/jack.stevenson.1656"]
   },
-  {//twitter
+  {//Twitter
     name:"Twitter",
     type:["All","Social"],
     link:["https://twitter.com/a_yakkus"]
@@ -36,20 +36,15 @@ var data = [
     type:["All","Business"],
     link:["https://github.com/a_yakkus"]
   },
-  {//linked In
+  {//Linked In
     name:"LinkedIn",
     type:["All","Business"],
     link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
   },
-  {
+  {//Reddit
     name:"Reddit",
     type:["All", "Social"],
     link:["https://www.reddit.com/user/ayakkus"]
-  },
-  {//MAL
-    name:"MyAnimeList",
-    type:["All","Hobby"],
-    link:["https://myanimelist.net/profile/A_Yakkus"]
   }
 ]
 
