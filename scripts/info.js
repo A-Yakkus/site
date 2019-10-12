@@ -1,51 +1,51 @@
 var data = [
   {//Email
     name:"Email",
-    type:["All","Business"],
+    type:["Business"],
     link:["jack.stevenson9001@gmail.com"],
     icon:"email"
   },
   {//Phone
     name:"Phone",
-    type:["All","Business"],
+    type:["Business"],
     link:["07979 227 223"],
     icon:"phone"
   },
   {//Skype
     name:"Skype",
-    type:["All","Social"],
-    link:["theyakattheendoftheuniverse", "jack.stevenson9001@gmail.com"]
+    type:["Social"],
+    link:["jack.stevenson9001@gmail.com"]
   },
   {//Facebook
     name:"Facebook",
-    type:["All","Social"],
+    type:["Social"],
     link:["https://www.facebook.com/jack.stevenson.1656"]
   },
   {//Twitter
     name:"Twitter",
-    type:["All","Social"],
+    type:["Social"],
     link:["https://twitter.com/a_yakkus"]
   },
-  {//Discord
+  /*{//Discord
     name:"Discord",
     type:["All","Social","Gaming"],
     link:["A_Yakkus#6078"]
-  },
+  },*/
   {//Github
     name:"Github",
-    type:["All","Business"],
+    type:["Business"],
     link:["https://github.com/a_yakkus"]
   },
   {//Linked In
     name:"LinkedIn",
-    type:["All","Business"],
+    type:["Business"],
     link:["https://www.linkedin.com/in/jack-stevenson-494733152"]
   },
-  {//Reddit
+/*  {//Reddit
     name:"Reddit",
     type:["All", "Social"],
     link:["https://www.reddit.com/user/ayakkus"]
-  }
+  }*/
 ]
 
 function load(){
